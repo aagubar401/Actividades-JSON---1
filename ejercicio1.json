@@ -1,0 +1,8 @@
+{
+    "numero":6,
+    "cadena":"EUPEO",
+    "booleano":true,
+    "array":["Beret","Melendi","Alejandro Sanz","Shakira","ElAngeluco"],
+    "objeto":{"Pokemon":"Pikachu", "Tipo":"Electrico", "NºPokedex":25},
+    "nulo":null
+}
