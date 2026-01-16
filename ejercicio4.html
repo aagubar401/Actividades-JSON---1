@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio4</title>
+</head>
+<body>
+    <h1 id="demo">demo</h1>
+    <script>
+        const objeto_javascript = {nombre: "Mario", apellidos: "Sánchez López", edad: 26, curso: "DAW2", asignatura: "DEWC", ciudad: "El Puerto de Santa María"};
+        const mijson = JSON.stringify(objeto_javascript);
+        window.location = "demo_json.php?x=" + mijson;
+        localStorage.setItem("datos", mijson);
+        const jsonRecuperado = localStorage.getItem("datos");
+        const objetorecuperado = JSON.parse(jsonRecuperado);
+        document.getElementById("demo").textContent = objetorecuperado.nombre
+    </script>
+</body>
+</html>
